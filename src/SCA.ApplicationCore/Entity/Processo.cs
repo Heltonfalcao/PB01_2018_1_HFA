@@ -18,5 +18,9 @@ namespace SCA.ApplicationCore.Entity
         public int PessoaId { get; set; }
         public Pessoa Pessoa { get; set; }
 
-    }
+        public ICollection<Tipo> Tipos { get; set; }
+        public ICollection<Audiencia> Audiencias { get; set; }
+       
+
+            }
 }

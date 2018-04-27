@@ -12,7 +12,11 @@ namespace SCA.ApplicationCore.Entity
 
         public int AudienciaId { get; set; }
         public DateTime Data { get; set; }
-        public String Detalhes { get; set; }
+        public string Detalhes { get; set; }
+
+        public int ProcessoId { get; set; }
+        public Processo Processo { get; set; }
+
 
 
     }

@@ -15,6 +15,7 @@ namespace SCA.ApplicationCore.Entity
         public string Nome { get; set; }
         public string Email { get; set; }
         public ICollection<Processo> Processos { get; set; }
+        public ICollection<Endereco> Enderecos { get; set; }
     }
 
 }

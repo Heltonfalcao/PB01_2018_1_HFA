@@ -47,6 +47,53 @@ namespace SCA.Infrastrucuture.Data
                  }
                };
             context.AddRange(Processos);
+            var Audiencias = new Audiencia[]
+           {
+                new Audiencia{
+                    Data = new DateTime (01,05,2016),
+                    Detalhes = "Processo em Analise do juiz da primeira vara civil",
+                    Processo = Processos [0]
+                },
+               new Audiencia{
+                    Data = new DateTime (25,05,2016),
+                    Detalhes = "Processo Arquivado" ,
+                    Processo = Processos [1]
+                 }
+               };
+            context.AddRange(Audiencias);
+            var Enderecos = new Endereco[]
+           {
+                new Endereco{
+
+                    Lougradouro = "quadra 21 setor 3",
+                    Bairro = "CPA ",
+                    Cep ="78058400",
+                    Numero = "41",
+
+                },
+               new Endereco{
+                     Lougradouro = "quadra 54 setor 3",
+                    Bairro = "CPA 4 ",
+                    Cep ="78058300",
+                    Numero = "1",
+                    
+
+               }
+               };
+            context.AddRange(Enderecos);
+            var Tipos = new Tipo[]
+           {
+                new Tipo{
+
+                   Descricao = "Jugado e condenado"                   
+                },
+               new Tipo{
+                    Descricao = "Jugado e condenado",
+
+
+               }
+               };
+            context.AddRange(Tipos);
             context.SaveChanges();
 
 

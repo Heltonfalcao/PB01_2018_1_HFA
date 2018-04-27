@@ -16,6 +16,10 @@ namespace SCA.ApplicationCore.Entity
         public String Cep { get; set; }
         public String Numero { get; set; }
 
+        public int PessoaId { get; set; }
+        public Pessoa Pessoa { get; set; }
+
+
     }
 
 
