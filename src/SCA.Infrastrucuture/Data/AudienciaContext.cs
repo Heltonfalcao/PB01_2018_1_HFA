@@ -14,11 +14,11 @@ namespace SCA.Infrastrucuture.Data
 
         }
 
-        public DbSet<Audiencia> Audiencias { get; set; }
+        public DbSet<Processo> Audiencias { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Audiencia>().ToTable("Audiencia");
+            modelBuilder.Entity<Processo>().ToTable("Audiencia");
         }
 
 

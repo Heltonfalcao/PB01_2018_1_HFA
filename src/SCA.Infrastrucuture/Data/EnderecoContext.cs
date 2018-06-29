@@ -13,11 +13,11 @@ namespace SCA.Infrastrucuture.Data
 
         }
 
-        public DbSet<Endereco> Enderecos { get; set; }
+        public DbSet<Processo> Enderecos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Endereco>().ToTable("Endereco");
+            modelBuilder.Entity<Processo>().ToTable("Endereco");
         }
     }
 

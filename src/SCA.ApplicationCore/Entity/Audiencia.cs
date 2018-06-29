@@ -4,9 +4,9 @@ using System.Text;
 
 namespace SCA.ApplicationCore.Entity
 {
-    public class Audiencia
+    public class Processo
     {
-        public Audiencia()
+        public Processo()
         {
         }
 

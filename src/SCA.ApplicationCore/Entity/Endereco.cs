@@ -4,9 +4,9 @@ using System.Text;
 
 namespace SCA.ApplicationCore.Entity
 {
-    public class Endereco
+    public class Processo
     {
-        public Endereco()
+        public Processo()
         {
         }
 
@@ -17,7 +17,7 @@ namespace SCA.ApplicationCore.Entity
         public String Numero { get; set; }
 
         public int PessoaId { get; set; }
-        public Pessoa Pessoa { get; set; }
+        public Processo Pessoa { get; set; }
 
 
     }

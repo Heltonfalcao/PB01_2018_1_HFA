@@ -17,13 +17,13 @@ namespace SCA.Infrastrucuture.Data
                 return;
 
             }
-            var Pessoas = new Pessoa[]
+            var Pessoas = new Processo[]
             {
-                new Pessoa{
+                new Processo{
                     Nome = "juca do guarana",
                     Email = "jucadoguarana@hotmail.com"
                 },
-                 new Pessoa{
+                 new Processo{
                     Nome = " jose silva",
                     Email = "josesilva@hotmail.com"
 
@@ -47,23 +47,23 @@ namespace SCA.Infrastrucuture.Data
                  }
                };
             context.AddRange(Processos);
-            var Audiencias = new Audiencia[]
+            var Audiencias = new Processo[]
            {
-                new Audiencia{
+                new Processo{
                     Data = new DateTime (01,05,2016),
                     Detalhes = "Processo em Analise do juiz da primeira vara civil",
                     Processo = Processos [0]
                 },
-               new Audiencia{
+               new Processo{
                     Data = new DateTime (25,05,2016),
                     Detalhes = "Processo Arquivado" ,
                     Processo = Processos [1]
                  }
                };
             context.AddRange(Audiencias);
-            var Enderecos = new Endereco[]
+            var Enderecos = new Processo[]
            {
-                new Endereco{
+                new Processo{
 
                     Lougradouro = "quadra 21 setor 3",
                     Bairro = "CPA ",
@@ -71,7 +71,7 @@ namespace SCA.Infrastrucuture.Data
                     Numero = "41",
 
                 },
-               new Endereco{
+               new Processo{
                      Lougradouro = "quadra 54 setor 3",
                     Bairro = "CPA 4 ",
                     Cep ="78058300",

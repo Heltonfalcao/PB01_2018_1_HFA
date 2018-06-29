@@ -13,11 +13,11 @@ namespace SCA.Infrastrucuture.Data
 
         }
 
-        public DbSet<Pessoa> Pessoas { get; set; }
+        public DbSet<Processo> Pessoas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Pessoa>().ToTable("Pessoa");
+            modelBuilder.Entity<Processo>().ToTable("Pessoa");
         }
 
         internal void AddRange(object pessoas)
